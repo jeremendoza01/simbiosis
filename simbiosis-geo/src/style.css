@@ -110,7 +110,7 @@ header {
 
 .navbar .toggle-btn:hover {
     color: #04b344;
-    scale: 1.05;
+    scale: 1.02;
 }
 
 .action-btn {
@@ -160,11 +160,14 @@ header {
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
-    transition: all 0.12s ease-out;
+    transition: all 0.2s ease-out;
 }
 
+
 .drop-menu a:hover {
-    color: rgb(5, 5, 5);
+    /* border-bottom: 2px solid #04b344; */
+    /* transform: translateY(3px); */
+    color: #04b344;
     scale: 1.07;
 }
 
@@ -179,7 +182,10 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+}
 
+.drop-menu .action-btn:hover {
+    color: #1A1A1A;
 }
 
 .drop-menu.open {
@@ -513,7 +519,6 @@ header .container {
 
 }
 
-
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
@@ -626,7 +631,7 @@ header .container {
     color: blueviolet;
 }
 
-
+/*  */
 
 
 #hero {
@@ -779,6 +784,58 @@ header .container {
     text-align: center;
     padding-top: 40px;
 }
+
+/*  */
+
+#info_section .animate {
+    filter: blur(5px);
+    transition: 0.7s;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition-delay: calc(0.1s * var(--i));
+}
+
+#info_section.show-animate .animate {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ANIMATE 2 */
+
+#info_section .animate2 {
+    filter: blur(5px);
+    transition: 0.7s;
+    opacity: 0;
+    transform: translateX(100%);
+    transition-delay: calc(0.1s * var(--i));
+}
+
+#info_section.show-animate .animate2 {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* BUTTON */
+#info_section .form-button {
+    filter: blur(5px);
+    transition: 0.7s;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition-delay: calc(0.2s * var(--i));
+    /* transition: all 0.2s linear; */
+}
+
+#info_section.show-animate .form-button {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
 
 #footer .footer-copy {
     background-image: linear-gradient(0deg,
