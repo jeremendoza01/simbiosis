@@ -428,6 +428,7 @@ header .nav-bar-links {
     transform: translateY(-550px);
   }
 
+  
   100% {
     opacity: 1;
     filter: blur(0);
