@@ -211,8 +211,8 @@ header {
   font-weight: 600;
   line-height: normal;
   margin: 0;
-  min-height: 60px;
-  min-width: 0;
+  min-height: 55px;
+  min-width: 100px;
   outline: none;
   padding: 14px 24px;
   text-align: center;
@@ -258,7 +258,7 @@ header {
   font-weight: 600;
   line-height: normal;
   margin: 0;
-  min-height: 60px;
+  min-height: 55px;
   min-width: 0;
   outline: none;
   padding: 16px 24px;
@@ -296,11 +296,6 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.5)
-  );
 }
 
 .container nav {
@@ -376,6 +371,15 @@ header .container {
   color: #04b344;
 }
 
+#about-nosotros {
+  height: 100vh;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
 #about-nosotros .container {
   color: white;
   font-family: "Jost", sans-serif;
@@ -428,7 +432,6 @@ header .nav-bar-links {
     transform: translateY(-550px);
   }
 
-  
   100% {
     opacity: 1;
     filter: blur(0);
@@ -606,7 +609,7 @@ header .nav-bar-links {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("images/unguento-extracto.jpg");
+    url("images/aceite-1.jpg");
 }
 
 .carta:nth-child(3) {
@@ -615,7 +618,7 @@ header .nav-bar-links {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("images/aceite-1.jpg");
+    url("images/unguento-extracto.jpg");
 }
 
 .carta:nth-child(4) {
@@ -1105,6 +1108,7 @@ header .nav-bar-links {
   }
 
   #about-nosotros .container {
+    padding-top: 150px;
     width: 100%;
     height: 100vh;
   }
@@ -1270,6 +1274,12 @@ header .nav-bar-links {
     /* transition: all 0.2s linear; */
   }
 
+  #info_section.show-animate .form-button {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   /* outer */
   #product_section #outer {
     filter: blur(5px);
@@ -1361,11 +1371,12 @@ header .nav-bar-links {
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* gap: 50px; */
     justify-content: center;
   }
 
-  #hero1 .img-container {
-    /* background-image: url("images/about.jpg"); */
+  /* #hero1 .img-container {
+    background-image: url("images/p-4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -1374,17 +1385,17 @@ header .nav-bar-links {
     border-radius: 12px;
     margin-left: 35px;
     transition: all 0.3s ease-out;
-  }
+  } */
 
-  #hero .img-container:hover {
+  /* #hero .img-container:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    /* filter: grayscale(80%); */
-  }
+    filter: grayscale(80%);
+  } */
 
-  #hero .img-container {
+  /* #hero .img-container {
     overflow: hidden;
-  }
+  } */
 
   #hero .beneficios2 {
     font-size: 1.6em;
@@ -1427,7 +1438,7 @@ header .nav-bar-links {
 
   #product_section .carta {
     padding: 10px 10px;
-    height: 17em;
+    height: 20em;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
@@ -1437,7 +1448,9 @@ header .nav-bar-links {
 
   #product_section p {
     display: block;
-    font-size: 1.35em;
+    font-size: 1.17em;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   #product_section h2 {
@@ -1537,7 +1550,8 @@ header .nav-bar-links {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 80px 150px;
+    margin: 70px 100px;
+    /* margin-right: 50px; */
   }
 }
 
