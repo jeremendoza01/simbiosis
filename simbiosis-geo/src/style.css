@@ -600,7 +600,7 @@ header .nav-bar-links {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("images/aceite-2.jpg");
+    url("images/aceite-1.jpg");
 }
 
 .carta:nth-child(2) {
@@ -609,7 +609,7 @@ header .nav-bar-links {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("images/aceite-1.jpg");
+    url("images/aceite-2.jpg");
 }
 
 .carta:nth-child(3) {
@@ -618,7 +618,7 @@ header .nav-bar-links {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("images/unguento-extracto.jpg");
+    url("images/aceite-1.jpg");
 }
 
 .carta:nth-child(4) {
@@ -627,7 +627,7 @@ header .nav-bar-links {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("images/p-4.jpg");
+    url("images/unguento-extracto.jpg");
 }
 
 .carta:nth-child(5) {
