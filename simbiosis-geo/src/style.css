@@ -868,6 +868,24 @@ header .nav-bar-links {
   text-transform: uppercase;
 }
 
+#info_section .animate3 {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+#info_section .animate4 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: center;
+  font-size: 1.1em;
+}
+
 #footer {
   margin: 0px 0px;
   padding: 0px 0px;
@@ -1164,10 +1182,13 @@ header .nav-bar-links {
   }
 
   #info_section .animate4 {
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
     align-items: center;
+    margin-top: 25px;
     justify-content: center;
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1.1em;
+    /* font-weight: 600; */
   }
 
   #info_section i {
