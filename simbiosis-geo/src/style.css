@@ -1396,28 +1396,6 @@ header .nav-bar-links {
     justify-content: center;
   }
 
-  /* #hero1 .img-container {
-    background-image: url("images/p-4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 550px;
-    background-position: center center;
-    border-radius: 12px;
-    margin-left: 35px;
-    transition: all 0.3s ease-out;
-  } */
-
-  /* #hero .img-container:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    filter: grayscale(80%);
-  } */
-
-  /* #hero .img-container {
-    overflow: hidden;
-  } */
-
   #hero .beneficios2 {
     font-size: 1.6em;
   }
