@@ -16,7 +16,7 @@ toggleBtn.onclick = function () {
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
+    let offset = sec.offsetTop - 600;
     let height = sec.offsetHeight;
 
     if (top >= offset && top < offset + height) {
