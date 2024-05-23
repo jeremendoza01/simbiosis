@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaini&display=swap');
+
 
 * {
   margin: 0;
@@ -59,8 +61,8 @@ header {
     rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.5)
   );
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
+  padding-left: 0.4rem;
+  padding-right: 1.5rem;
   width: 100%;
   height: 6rem;
   margin: 0 auto;
@@ -70,16 +72,24 @@ header {
 }
 
 .navbar .logo {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   transition: all 0.15s linear;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   user-select: none;
+  gap: 20px;
+}
+
+.navbar .logo h3{
+  font-family: "Jaini", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.7em;
 }
 
 .navbar .links {
@@ -102,7 +112,7 @@ header {
 
 .navbar .toggle-btn {
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   cursor: pointer;
   display: none;
   transition: all 0.12s linear;
@@ -190,10 +200,10 @@ header {
 
 .container-botones {
   display: flex;
-  flex-direction: column;
-  margin: 30px 45px;
+  flex-direction: row;
+  margin: 40px 45px;
   justify-content: center;
-  gap: 15px;
+  gap: 17px;
 }
 
 .button-catalogo {
@@ -207,14 +217,14 @@ header {
   display: inline-block;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   line-height: normal;
   margin: 0;
   min-height: 55px;
   min-width: 100px;
   outline: none;
-  padding: 14px 24px;
+  padding: 17px 24px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 2px;
@@ -254,7 +264,7 @@ header {
   display: inline-block;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   line-height: normal;
   margin: 0;
@@ -384,7 +394,7 @@ header .container {
   color: white;
   font-family: "Jost", sans-serif;
   text-align: center;
-  padding: 95px 20px;
+  padding: 75px 20px;
 }
 
 #about-nosotros h2 {
@@ -503,7 +513,16 @@ header .nav-bar-links {
 
 #product_section {
   color: white;
-  background-color: rgb(30, 30, 30);
+  /* background-color: rgba(30, 30, 30, 0.7); */
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("images/piedra.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -518,12 +537,11 @@ header .nav-bar-links {
   margin-left: 10px;
   font-size: 2.2em;
   scale: 1;
-  color: #030;
+  color: #060;
   transition: all 0.2s linear;
 }
 #product_section i:hover{
-  color: #060;
-
+  color: #050;
   scale: 1.12;
 }
 
@@ -531,21 +549,30 @@ header .nav-bar-links {
   padding: 15px 25px;
 }
 
+#product_section .h2-aceites{
+  text-align: center;
+  font-size: 1.6em;
+
+}
+
 .container-text {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 70px 10px;
+  margin-top: 60px;
+  margin: 0px 10px;
 }
 
 #product_section h1 {
-  padding: 5px auto;
+  /* padding: 5px auto; */
+  margin-top: 50px;
+  margin-bottom: 40px;
   font-family: "Lexend Exa", sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-size: 2.05em;
   user-select: none;
-  border-bottom: 3px solid #04b344;
-  border-top: 3px solid #04b344;
+  /* border-bottom: 3px solid #04b344; */
+  /* border-top: 3px solid #04b344; */
 }
 
 #product_section h2 {
@@ -560,6 +587,16 @@ header .nav-bar-links {
   font-family: "Sometype Mono", monospace;
   font-size: 1.1em;
   user-select: none;
+}
+
+#product_section .carta-semilla p{
+  text-align: center;
+  font-size: 1.3em;
+  /* font-family: Lato; */
+}
+#product_section .carta-semilla a{
+  color: #04b344;
+  font-family: Lato;
 }
 
 #outer {
@@ -604,53 +641,56 @@ header .nav-bar-links {
   background-repeat: no-repeat;
   margin: 15px;
   padding: 20px 20px;
-  border-radius: 14px;
+  border-radius: 40px;
   transition: all 0.1s linear;
 }
 
 .carta:first-child {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url("images/aceite-1.jpg");
+    url("images/aceitethccbd.jpg");
 }
 
 .carta:nth-child(2) {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url("images/aceite-2.jpg");
+    url("images/aceitecbd.jpg");
 }
 
 .carta:nth-child(3) {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url("images/aceite-1.jpg");
+    url("images/unguento.jpg");
 }
 
-.carta:nth-child(4) {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("images/unguento-extracto.jpg");
-}
 
-.carta:nth-child(5) {
+
+.carta-semilla{
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url("images/p-5.jpg");
+    url("https://es.rollingstone.com/wp-content/uploads/2022/04/semillas-cannabis.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15px;
+    padding: 20px 20px;
+    border-radius: 14px;
+    transition: all 0.1s linear;
+}
+.carta-semilla p{
+  font-size: 2em;
 }
 
 .carta:nth-child(6) {
@@ -698,12 +738,13 @@ header .nav-bar-links {
   text-align: center;
   flex-direction: column;
   color: black;
-  background-color: rgb(225, 255, 225);
+  background-color: rgb(255, 255, 240);
 }
 
 #hero1 h2 {
   font-size: 1.7em;
-  padding: 10px 45px;
+  padding: 0px 45px;
+  margin-top: 40px;
   font-family: "Jost", sans-serif;
 }
 
@@ -717,11 +758,11 @@ header .nav-bar-links {
   text-align: center;
 }
 
-#hero1 i {
+/* #hero1 i {
   color: #04b344;
   margin-top: 0px;
   font-size: 1.8em;
-}
+} */
 
 #hero1 .beneficios2 {
   font-family: "Jost", sans-serif;
@@ -748,6 +789,7 @@ header .nav-bar-links {
 
 #hero1 a:hover {
   color: blueviolet;
+  transition: all 0.2s linear;
 }
 
 #hero {
@@ -838,9 +880,17 @@ header .nav-bar-links {
   padding-bottom: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  color: black;
+  color: rgb(205, 205, 205);
   font-family: "Quicksand", sans-serif;
-  background-color: rgb(215, 215, 215);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("images/nav-bar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -860,18 +910,26 @@ header .nav-bar-links {
 #info_section p {
   padding: 8px 20px;
   font-size: 1.3rem;
-  font-weight: 500;
+  color: rgb(215, 215, 205);
+  /* font-weight: 600; */
 }
 
 #info_section i {
   font-size: 1.6em;
   align-items: center;
   justify-content: center;
+  color: rgb(215, 215, 205);
+}
+
+#info_section a{
+  color: rgb(215, 215, 205);
+  font-weight: 500;
 }
 
 #info_section h2 {
   font-size: 2.25em;
   padding-top: 30px;
+  color: rgb(215, 215, 205);
   padding: 20px 10px;
 }
 
@@ -1136,7 +1194,7 @@ header .nav-bar-links {
     height: 6.5rem;
     justify-content: space-between;
     width: 100%;
-    padding: 50px 40px;
+    padding: 20px 40px;
   }
 
   #about-nosotros .container {
@@ -1156,7 +1214,22 @@ header .nav-bar-links {
     opacity: 0;
   }
 
+
   #product_section.show-animate .carta {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  #product_section .carta-semilla {
+    background-size: cover;
+    background-position: center center;
+    /* margin: 0 30px; */
+    transform: translateX(-100%);
+    transition-delay: calc(0.27s * var(--i));
+    opacity: 0;
+  }
+
+  #product_section.show-animate .carta-semilla {
     transform: translateX(0);
     opacity: 1;
   }
@@ -1185,6 +1258,7 @@ header .nav-bar-links {
     padding-left: 65px;
     font-size: 1.5em;
     margin-top: 20px;
+    font-weight: bold;
   }
 
   #info_section .animate3 {
@@ -1261,6 +1335,7 @@ header .nav-bar-links {
     opacity: 0;
     transform: translateY(100%);
     transition-delay: calc(0.1s * var(--i));
+    font-weight: bold;
   }
 
   #info_section.show-animate .animate2 {
@@ -1441,8 +1516,8 @@ header .nav-bar-links {
   }
 
   #product_section .cartas {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1460,7 +1535,7 @@ header .nav-bar-links {
   }
 
   #product_section p {
-    display: block;
+    text-align: center;
     font-size: 1.17em;
     margin-top: 0;
     padding-top: 0;
