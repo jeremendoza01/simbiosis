@@ -772,7 +772,7 @@ header .nav-bar-links {
 
 #hero1 .beneficios2 {
   font-family: "Jost", sans-serif;
-  margin: 0px 20px;
+  margin: 0px 90px;
   text-align: center;
   font-size: 1.25em;
   padding: 10px 15px;
@@ -1138,20 +1138,12 @@ header .nav-bar-links {
     filter: blur(5px);
     transition: 0.7s;
     opacity: 0;
-    transition-delay: calc(0.1s * var(--i));
+
   }
 
   #hero1.show-animate .hero-h2 {
     filter: blur(0);
     opacity: 1;
-  }
-
-  #hero1 .hero-h2 {
-    transform: translateX(-500px);
-  }
-
-  #hero1.show-animate .hero-h2 {
-    transform: translateX(0);
   }
 
   #hero1 .beneficios2 {
@@ -1159,7 +1151,6 @@ header .nav-bar-links {
     filter: blur(5px);
     transition: 0.7s;
     opacity: 0;
-    transition-delay: calc(0.1s * var(--i));
   }
 
   #hero1.show-animate .beneficios2 {
@@ -1167,13 +1158,7 @@ header .nav-bar-links {
     opacity: 1;
   }
 
-  #hero1 .beneficios2 {
-    transform: translateX(500px);
-  }
 
-  #hero1.show-animate .beneficios2 {
-    transform: translateX(0);
-  }
 
   #hero1 .documento {
     filter: blur(5px);
@@ -1187,13 +1172,7 @@ header .nav-bar-links {
     opacity: 1;
   }
 
-  #hero1 .documento {
-    transform: translateX(500px);
-  }
 
-  #hero1.show-animate .documento {
-    transform: translateY(0);
-  }
 
   header .navbar {
     height: 6.5rem;
@@ -1214,14 +1193,11 @@ header .nav-bar-links {
     background-size: cover;
     background-position: center center;
     /* margin: 0 30px; */
-    transform: translateX(-100%);
-    transition-delay: calc(0.18s * var(--i));
     opacity: 0;
   }
 
 
   #product_section.show-animate .carta {
-    transform: translateX(0);
     opacity: 1;
   }
 
@@ -1229,8 +1205,7 @@ header .nav-bar-links {
     background-size: cover;
     background-position: center center;
     /* margin: 0 30px; */
-    transform: translateX(-100%);
-    transition-delay: calc(0.27s * var(--i));
+
     opacity: 0;
   }
 
@@ -1415,14 +1390,11 @@ header .nav-bar-links {
     filter: blur(5px);
     transition: 0.7s;
     opacity: 0;
-    transform: translateY(-100px);
-    transition-delay: calc(0.2s * var(--i));
   }
 
   #product_section.show-animate .container-text {
     filter: blur(0);
     opacity: 1;
-    transform: translateY(0);
   }
 
   #footer-copy {
