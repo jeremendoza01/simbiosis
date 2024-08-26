@@ -40,6 +40,8 @@ li {
 
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -368,7 +370,6 @@ header .container {
 }
 
 .div-redes a {
-  color: black;
   text-decoration: none;
   letter-spacing: 7px;
   font-size: 1.9em;
@@ -378,7 +379,6 @@ header .container {
 
 .div-redes a:hover {
   translate: 0px -3px;
-  color: #04b344;
 }
 
 #about-nosotros {
@@ -519,7 +519,7 @@ header .nav-bar-links {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.6)
     ),
-    url("images/piedra.jpg");
+    url("images/background.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -587,6 +587,12 @@ header .nav-bar-links {
   font-family: "Sometype Mono", monospace;
   font-size: 1.1em;
   user-select: none;
+}
+
+.p-info{
+  /* color: #1a1a1a; */
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 #product_section .carta-semilla p{
@@ -887,7 +893,7 @@ header .nav-bar-links {
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.8)
   ),
-  url("images/nav-bar.jpg");
+  url("images/background.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -911,7 +917,7 @@ header .nav-bar-links {
   padding: 8px 20px;
   font-size: 1.3rem;
   color: rgb(215, 215, 205);
-  /* font-weight: 600; */
+
 }
 
 #info_section i {
@@ -923,7 +929,6 @@ header .nav-bar-links {
 
 #info_section a{
   color: rgb(215, 215, 205);
-  font-weight: 500;
 }
 
 #info_section h2 {
@@ -1183,7 +1188,7 @@ header .nav-bar-links {
   }
 
   #hero1 .documento {
-    transform: translateY(500px);
+    transform: translateX(500px);
   }
 
   #hero1.show-animate .documento {
