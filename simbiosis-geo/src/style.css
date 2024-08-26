@@ -772,7 +772,7 @@ header .nav-bar-links {
 
 #hero1 .beneficios2 {
   font-family: "Jost", sans-serif;
-  margin: 0px 90px;
+  margin: 0px 10px;
   text-align: center;
   font-size: 1.25em;
   padding: 10px 15px;
@@ -1151,6 +1151,7 @@ header .nav-bar-links {
     filter: blur(5px);
     transition: 0.7s;
     opacity: 0;
+    margin: 0px 80px;
   }
 
   #hero1.show-animate .beneficios2 {
