@@ -9,15 +9,15 @@ toggleBtn.onclick = function () {
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
 
-window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 4000;
-    let height = sec.offsetHeight;
-    if (top >= offset && top < offset + height) {
-      sec.classList.add("show-animate");
-    } else {
-      sec.classList.remove("show-animate");
-    }
-  });
-};
+// window.onscroll = () => {
+//   sections.forEach((sec) => {
+//     let top = window.scrollY;
+//     let offset = sec.offsetTop - 4000;
+//     let height = sec.offsetHeight;
+//     if (top >= offset && top < offset + height) {
+//       // sec.classList.add("show-animate");
+//     } else {
+//       // sec.classList.remove("show-animate");
+//     }
+//   });
+// };
