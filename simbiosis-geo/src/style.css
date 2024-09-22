@@ -58,11 +58,9 @@ header {
 }
 
 .navbar {
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.5)
-  );
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.5));
   padding-left: 0.4rem;
   padding-right: 1.5rem;
   width: 100%;
@@ -71,6 +69,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  /* top: 0; */
+  width: 100%;
+  /* background-color: #333; */
+  z-index: 1000;
 }
 
 .navbar .logo {
@@ -87,7 +90,7 @@ header {
   gap: 20px;
 }
 
-.navbar .logo h3{
+.navbar .logo h3 {
   font-family: "Jaini", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -159,14 +162,16 @@ header {
   width: 300px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  border-radius: 10px;
+  border-radius: 25px;
   overflow: hidden;
-  transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 
 .drop-menu a {
   font-family: "Sometype Mono", monospace;
   text-decoration: none;
+  border-bottom: #04b344 1px solid;
   color: white;
   font-size: 1rem;
   text-transform: uppercase;
@@ -196,14 +201,32 @@ header {
 }
 
 .drop-menu.open {
+  /* display: block; */
+  /* overflow: auto; */
+  /* top: 0; */
+  left: 0;
+  margin-top: 30px;
+  width: 100%;
+  /* margin: 50px 20px; */
+  /* Fondo semitransparente */
+  z-index: 3000;
+  /* Mayor que el z-index de la navbar */
+  text-align: center;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  /* height: 250px; */
+  /* position: fixed; */
   /* height: 230px; */
-  height: 11.5em;
+  height: 14em;
+
 }
 
 .container-botones {
   display: flex;
   flex-direction: row;
-  margin: 40px 45px;
+  /* margin: 100px 45px; */
+  margin-top: 50px;
   justify-content: center;
   gap: 17px;
 }
@@ -383,28 +406,27 @@ header .container {
 
 #about-nosotros {
   height: 100vh;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.5)
-  );
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5));
 }
 
 #about-nosotros .container {
   color: white;
   font-family: "Jost", sans-serif;
   text-align: center;
-  padding: 75px 20px;
+  /* padding: 75px 20px; */
+  padding-top: 250px;
 }
 
 #about-nosotros h2 {
-  font-size: 2.7em;
+  font-size: 2.8em;
   padding-bottom: 16px;
 }
 
 #about-nosotros p {
   font-size: 1.35em;
-  padding: 0px 45px;
+  padding: 0px 25px;
   font-family: "Jost", sans-serif;
   text-align: center;
 }
@@ -514,15 +536,13 @@ header .nav-bar-links {
 #product_section {
   color: white;
   /* background-color: rgba(30, 30, 30, 0.7); */
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.6)
-    ),
+      rgba(0, 0, 0, 0.6)),
     url("images/background.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -532,7 +552,7 @@ header .nav-bar-links {
   padding-bottom: 25px;
 }
 
-#product_section i{
+#product_section i {
   padding: 15px 20px;
   margin-left: 10px;
   font-size: 2.2em;
@@ -540,7 +560,8 @@ header .nav-bar-links {
   color: #060;
   transition: all 0.2s linear;
 }
-#product_section i:hover{
+
+#product_section i:hover {
   color: #050;
   scale: 1.12;
 }
@@ -549,7 +570,7 @@ header .nav-bar-links {
   padding: 15px 25px;
 }
 
-#product_section .h2-aceites{
+#product_section .h2-aceites {
   text-align: center;
   font-size: 1.6em;
 
@@ -559,8 +580,9 @@ header .nav-bar-links {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  /* margin-top: 90px; */
   margin: 0px 10px;
+  margin-top: 60px;
 }
 
 #product_section h1 {
@@ -589,18 +611,19 @@ header .nav-bar-links {
   user-select: none;
 }
 
-.p-info{
+.p-info {
   /* color: #1a1a1a; */
   font-weight: 500;
   text-transform: uppercase;
 }
 
-#product_section .carta-semilla p{
+#product_section .carta-semilla p {
   text-align: center;
   font-size: 1.3em;
   /* font-family: Lato; */
 }
-#product_section .carta-semilla a{
+
+#product_section .carta-semilla a {
   color: #04b344;
   font-family: Lato;
 }
@@ -641,89 +664,84 @@ header .nav-bar-links {
   font-size: 1.5em;
 }
 
-#product_section .carta {
+.carta {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 15px;
   padding: 20px 20px;
-  border-radius: 40px;
+  border-radius: 25px;
   transition: all 0.1s linear;
+  max-height: 600px;
+  /* min-height: 500px; */
+}
+
+.texto-carta {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-top: 200px;
 }
 
 .carta:first-child {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
     url("images/aceitethccbd.jpg");
 }
 
 .carta:nth-child(2) {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
     url("images/aceitecbd.jpg");
 }
 
 .carta:nth-child(3) {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
     url("images/unguento.jpg");
 }
 
 
 
-.carta-semilla{
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+.carta-semilla {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
     url("https://es.rollingstone.com/wp-content/uploads/2022/04/semillas-cannabis.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 15px;
-    padding: 20px 20px;
-    border-radius: 14px;
-    transition: all 0.1s linear;
-}
-.carta-semilla p{
-  font-size: 2em;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+  padding: 20px 20px;
+  border-radius: 14px;
+  transition: all 0.1s linear;
 }
 
 .carta:nth-child(6) {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url("images/p-5.jpg");
 }
 
 .carta:nth-child(7) {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url("images/p-5.jpg");
 }
 
 .carta:nth-child(8) {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url("images/p-5.jpg");
+}
+
+.carta-semilla p {
+  font-size: 2em;
 }
 
 .container-productos {
@@ -807,11 +825,9 @@ header .nav-bar-links {
   flex-direction: column;
   height: 90vh;
   color: aliceblue;
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url("images/info-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -888,12 +904,10 @@ header .nav-bar-links {
   padding-left: 10px;
   color: rgb(205, 205, 205);
   font-family: "Quicksand", sans-serif;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.8)
-  ),
-  url("images/background.png");
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)),
+    url("images/background.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -927,7 +941,7 @@ header .nav-bar-links {
   color: rgb(215, 215, 205);
 }
 
-#info_section a{
+#info_section a {
   color: rgb(215, 215, 205);
 }
 
@@ -987,11 +1001,9 @@ header .nav-bar-links {
 }
 
 #footer-copy {
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.2)
-  );
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.2));
   align-items: center;
   display: flex;
   justify-content: center;
@@ -1038,6 +1050,12 @@ header .nav-bar-links {
   background-color: #1e293b;
   color: #fff;
 }
+
+.div-cultivadores {
+  margin-top: 15px;
+}
+
+
 
 @media (min-width: 768px) {
   .button-81 {
@@ -1399,11 +1417,9 @@ header .nav-bar-links {
   }
 
   #footer-copy {
-    background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.2)
-    );
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.2));
     align-items: center;
     /* display: flex; */
     width: 100%;
@@ -1622,6 +1638,7 @@ header .nav-bar-links {
 }
 
 @media (max-width: 992px) {
+
   .navbar .links,
   .navbar .action-btn {
     display: none;

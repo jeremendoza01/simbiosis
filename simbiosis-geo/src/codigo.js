@@ -6,19 +6,14 @@ let sections = document.querySelectorAll("section");
 toggleBtn.onclick = function () {
   dropDownMenu.classList.toggle("open");
   const isOpen = dropDownMenu.classList.contains("open");
-
-  toggleBtnIcon.classList = isOpen
-    ? "fa-solid fa-xmark"
-    : "fa-solid fa-bars";
+  toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
-
 
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 600;
+    let offset = sec.offsetTop - 4000;
     let height = sec.offsetHeight;
-
     if (top >= offset && top < offset + height) {
       sec.classList.add("show-animate");
     } else {
@@ -26,4 +21,3 @@ window.onscroll = () => {
     }
   });
 };
-
